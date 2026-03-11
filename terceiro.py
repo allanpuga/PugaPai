@@ -32,3 +32,24 @@ print ('Frutas do índice 2 ao final:', frutas[2:])  # do índice 2 ao final
 print ('Banana está na lista?', "banana" in frutas)
 print ('Manga está na lista?', "manga" in frutas)   
 
+# Outras operações uteis
+print ('Lista original de números:', numeros)
+print ('Soma dos números:', sum(numeros))
+print ('Maior número:', max(numeros))
+print ('Menor número:', min(numeros))
+numeros.reverse()
+print ('Números invertidos:', numeros)
+numeros.sort()
+print ('Números ordenados:', numeros)
+numeros.sort(reverse=True)
+print ('Números ordenados decrescente:', numeros)
+
+# Iterar sobre a lista
+print ('Frutas na lista:')
+for fruta in frutas:
+    print ('- ' + fruta)
+
+# Lista compreensão (exemplo simples)
+numeros_quadrados = [x**2 for x in numeros]
+print ('Quadrados dos números:', numeros_quadrados)
+
