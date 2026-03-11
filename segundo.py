@@ -10,14 +10,15 @@ print (f'{nome}, seu IMC é {imc:.2f}.')
 # comparação + lógicos (faixa simplificada)
 
 baixo_peso = imc < 18.5
-peso_normal = 18.5 <= imc < 25
-sobrepeso = 25 <= imc < 30
+peso_normal = (18.5 <= imc < 25)
+sobrepeso = (25 <= imc < 30)
 obesidade = imc >= 30
 
 print ('Baixo peso' , baixo_peso)
 print ('Peso normal' , peso_normal)
 print ('Sobrepeso' , sobrepeso)
 print ('Obesidade' , obesidade)
+
 
 if baixo_peso:
     print (f'{nome}, você está abaixo do peso ideal.')
